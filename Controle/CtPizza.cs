@@ -13,5 +13,10 @@ namespace Controle
             tabela = objetocDados.Mostrar();
             return tabela;
         }
+
+        public void InserirPizza(string sabor, string ingredientes, double valor, string tipo)
+        {
+            objetocDados.Inserir(sabor, ingredientes, Convert.ToDouble(valor), tipo);
+        }
     }
 }

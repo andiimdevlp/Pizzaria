@@ -32,9 +32,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtIngredientes = new System.Windows.Forms.TextBox();
+            this.txtPreco = new System.Windows.Forms.TextBox();
+            this.txtSabor = new System.Windows.Forms.TextBox();
+            this.txtTipo = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgPizza)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,28 +86,56 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Ingredientes:";
             // 
-            // textBox1
+            // txtIngredientes
             // 
-            this.textBox1.Location = new System.Drawing.Point(123, 150);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(169, 53);
-            this.textBox1.TabIndex = 4;
+            this.txtIngredientes.Location = new System.Drawing.Point(123, 150);
+            this.txtIngredientes.Multiline = true;
+            this.txtIngredientes.Name = "txtIngredientes";
+            this.txtIngredientes.Size = new System.Drawing.Size(169, 53);
+            this.txtIngredientes.TabIndex = 4;
             // 
-            // textBox2
+            // txtPreco
             // 
-            this.textBox2.Location = new System.Drawing.Point(101, 86);
-            this.textBox2.MaxLength = 10;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(79, 23);
-            this.textBox2.TabIndex = 5;
+            this.txtPreco.Location = new System.Drawing.Point(101, 86);
+            this.txtPreco.MaxLength = 10;
+            this.txtPreco.Name = "txtPreco";
+            this.txtPreco.Size = new System.Drawing.Size(79, 23);
+            this.txtPreco.TabIndex = 5;
             // 
-            // textBox3
+            // txtSabor
             // 
-            this.textBox3.Location = new System.Drawing.Point(83, 28);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(188, 23);
-            this.textBox3.TabIndex = 6;
+            this.txtSabor.Location = new System.Drawing.Point(83, 28);
+            this.txtSabor.Name = "txtSabor";
+            this.txtSabor.Size = new System.Drawing.Size(188, 23);
+            this.txtSabor.TabIndex = 6;
+            // 
+            // txtTipo
+            // 
+            this.txtTipo.Location = new System.Drawing.Point(73, 222);
+            this.txtTipo.Name = "txtTipo";
+            this.txtTipo.Size = new System.Drawing.Size(161, 23);
+            this.txtTipo.TabIndex = 8;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Roboto", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(27, 225);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(40, 17);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Tipo:";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(42, 281);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Salvar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmPizza
             // 
@@ -114,9 +145,12 @@
             this.BackgroundImage = global::Views.Properties.Resources.bcgPizza;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(900, 500);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtTipo);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtSabor);
+            this.Controls.Add(this.txtPreco);
+            this.Controls.Add(this.txtIngredientes);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -138,8 +172,11 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox txtIngredientes;
+        private TextBox txtPreco;
+        private TextBox txtSabor;
+        private TextBox txtTipo;
+        private Label label4;
+        private Button button1;
     }
 }

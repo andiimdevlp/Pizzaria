@@ -20,5 +20,12 @@ namespace Dados
             conexao.FecharConexao();
             return tabela;
         }
+        public void Inserir(string sabor, string ingredientes, double valor, string tipo)
+        {
+            comando.Connection = conexao.AbrirConexao();
+            comando.CommandText = "INSERT INTO MultMassa.dbo.pizzas (sabor,ingredientes,valor,tipo)" +
+                "VALUES('" + sabor + "','" + ingredientes + "','" + valor + "','" + tipo + "')";
+            comando.ExecuteNonQuery();
+        }
     }
 }
