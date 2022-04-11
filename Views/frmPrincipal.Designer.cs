@@ -28,122 +28,134 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.mnPrincipal = new System.Windows.Forms.MenuStrip();
-            this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pedidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cadastrosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pizzasToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.gastosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.funcionariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.relatoriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mensalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.anualToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnPrincipal.SuspendLayout();
+            this.pnlMenu = new System.Windows.Forms.Panel();
+            this.pnlLogo = new System.Windows.Forms.Panel();
+            this.pnlTopo = new System.Windows.Forms.Panel();
+            this.pnlPrincipal = new System.Windows.Forms.Panel();
+            this.btnPedidos = new System.Windows.Forms.Button();
+            this.btnPizza = new System.Windows.Forms.Button();
+            this.btnGastos = new System.Windows.Forms.Button();
+            this.btnFuncionario = new System.Windows.Forms.Button();
+            this.btnRelatorio = new System.Windows.Forms.Button();
+            this.pnlMenu.SuspendLayout();
             this.SuspendLayout();
             // 
-            // mnPrincipal
+            // pnlMenu
             // 
-            this.mnPrincipal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuToolStripMenuItem,
-            this.relatoriosToolStripMenuItem});
-            this.mnPrincipal.Location = new System.Drawing.Point(0, 0);
-            this.mnPrincipal.Name = "mnPrincipal";
-            this.mnPrincipal.Size = new System.Drawing.Size(1200, 24);
-            this.mnPrincipal.TabIndex = 0;
-            this.mnPrincipal.Text = "menuStrip1";
+            this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(25)))), ((int)(((byte)(89)))));
+            this.pnlMenu.Controls.Add(this.btnRelatorio);
+            this.pnlMenu.Controls.Add(this.btnFuncionario);
+            this.pnlMenu.Controls.Add(this.btnGastos);
+            this.pnlMenu.Controls.Add(this.btnPizza);
+            this.pnlMenu.Controls.Add(this.btnPedidos);
+            this.pnlMenu.Controls.Add(this.pnlLogo);
+            this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlMenu.Location = new System.Drawing.Point(0, 0);
+            this.pnlMenu.Name = "pnlMenu";
+            this.pnlMenu.Size = new System.Drawing.Size(239, 700);
+            this.pnlMenu.TabIndex = 0;
             // 
-            // menuToolStripMenuItem
+            // pnlLogo
             // 
-            this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pedidoToolStripMenuItem,
-            this.cadastrosToolStripMenuItem1});
-            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
-            this.menuToolStripMenuItem.Text = "Menu";
+            this.pnlLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlLogo.Location = new System.Drawing.Point(0, 0);
+            this.pnlLogo.Name = "pnlLogo";
+            this.pnlLogo.Size = new System.Drawing.Size(239, 121);
+            this.pnlLogo.TabIndex = 0;
             // 
-            // pedidoToolStripMenuItem
+            // pnlTopo
             // 
-            this.pedidoToolStripMenuItem.Name = "pedidoToolStripMenuItem";
-            this.pedidoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.pedidoToolStripMenuItem.Text = "Pedido";
+            this.pnlTopo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(25)))), ((int)(((byte)(89)))));
+            this.pnlTopo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTopo.Location = new System.Drawing.Point(239, 0);
+            this.pnlTopo.Name = "pnlTopo";
+            this.pnlTopo.Size = new System.Drawing.Size(961, 121);
+            this.pnlTopo.TabIndex = 3;
             // 
-            // cadastrosToolStripMenuItem1
+            // pnlPrincipal
             // 
-            this.cadastrosToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pizzasToolStripMenuItem1,
-            this.gastosToolStripMenuItem1,
-            this.funcionariosToolStripMenuItem});
-            this.cadastrosToolStripMenuItem1.Name = "cadastrosToolStripMenuItem1";
-            this.cadastrosToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.cadastrosToolStripMenuItem1.Text = "Cadastros";
+            this.pnlPrincipal.Location = new System.Drawing.Point(268, 173);
+            this.pnlPrincipal.Name = "pnlPrincipal";
+            this.pnlPrincipal.Size = new System.Drawing.Size(900, 480);
+            this.pnlPrincipal.TabIndex = 4;
             // 
-            // pizzasToolStripMenuItem1
+            // btnPedidos
             // 
-            this.pizzasToolStripMenuItem1.Name = "pizzasToolStripMenuItem1";
-            this.pizzasToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.pizzasToolStripMenuItem1.Text = "Pizzas";
+            this.btnPedidos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnPedidos.Image = global::Views.Properties.Resources.IconPizza;
+            this.btnPedidos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPedidos.Location = new System.Drawing.Point(4, 158);
+            this.btnPedidos.Name = "btnPedidos";
+            this.btnPedidos.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnPedidos.Size = new System.Drawing.Size(231, 42);
+            this.btnPedidos.TabIndex = 0;
+            this.btnPedidos.Text = "Pedidos";
+            this.btnPedidos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPedidos.UseVisualStyleBackColor = true;
             // 
-            // gastosToolStripMenuItem1
+            // btnPizza
             // 
-            this.gastosToolStripMenuItem1.Name = "gastosToolStripMenuItem1";
-            this.gastosToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.gastosToolStripMenuItem1.Text = "Gastos";
+            this.btnPizza.Location = new System.Drawing.Point(4, 219);
+            this.btnPizza.Name = "btnPizza";
+            this.btnPizza.Size = new System.Drawing.Size(231, 42);
+            this.btnPizza.TabIndex = 2;
+            this.btnPizza.Text = "Pizzas";
+            this.btnPizza.UseVisualStyleBackColor = true;
             // 
-            // funcionariosToolStripMenuItem
+            // btnGastos
             // 
-            this.funcionariosToolStripMenuItem.Name = "funcionariosToolStripMenuItem";
-            this.funcionariosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.funcionariosToolStripMenuItem.Text = "Funcionarios";
+            this.btnGastos.Location = new System.Drawing.Point(4, 281);
+            this.btnGastos.Name = "btnGastos";
+            this.btnGastos.Size = new System.Drawing.Size(231, 42);
+            this.btnGastos.TabIndex = 3;
+            this.btnGastos.Text = "Gastos";
+            this.btnGastos.UseVisualStyleBackColor = true;
             // 
-            // relatoriosToolStripMenuItem
+            // btnFuncionario
             // 
-            this.relatoriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mensalToolStripMenuItem,
-            this.anualToolStripMenuItem});
-            this.relatoriosToolStripMenuItem.Name = "relatoriosToolStripMenuItem";
-            this.relatoriosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
-            this.relatoriosToolStripMenuItem.Text = "Relatorios";
+            this.btnFuncionario.Location = new System.Drawing.Point(4, 342);
+            this.btnFuncionario.Name = "btnFuncionario";
+            this.btnFuncionario.Size = new System.Drawing.Size(231, 42);
+            this.btnFuncionario.TabIndex = 4;
+            this.btnFuncionario.Text = "Funcionarios";
+            this.btnFuncionario.UseVisualStyleBackColor = true;
             // 
-            // mensalToolStripMenuItem
+            // btnRelatorio
             // 
-            this.mensalToolStripMenuItem.Name = "mensalToolStripMenuItem";
-            this.mensalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.mensalToolStripMenuItem.Text = "Mensal";
-            // 
-            // anualToolStripMenuItem
-            // 
-            this.anualToolStripMenuItem.Name = "anualToolStripMenuItem";
-            this.anualToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.anualToolStripMenuItem.Text = "Anual";
+            this.btnRelatorio.Location = new System.Drawing.Point(4, 403);
+            this.btnRelatorio.Name = "btnRelatorio";
+            this.btnRelatorio.Size = new System.Drawing.Size(231, 42);
+            this.btnRelatorio.TabIndex = 5;
+            this.btnRelatorio.Text = "Relatorio";
+            this.btnRelatorio.UseVisualStyleBackColor = true;
             // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1200, 700);
-            this.Controls.Add(this.mnPrincipal);
+            this.Controls.Add(this.pnlPrincipal);
+            this.Controls.Add(this.pnlTopo);
+            this.Controls.Add(this.pnlMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MainMenuStrip = this.mnPrincipal;
             this.Name = "frmPrincipal";
             this.Text = "frmPrincipal";
-            this.mnPrincipal.ResumeLayout(false);
-            this.mnPrincipal.PerformLayout();
+            this.pnlMenu.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private MenuStrip mnPrincipal;
-        private ToolStripMenuItem menuToolStripMenuItem;
-        private ToolStripMenuItem pedidoToolStripMenuItem;
-        private ToolStripMenuItem cadastrosToolStripMenuItem1;
-        private ToolStripMenuItem pizzasToolStripMenuItem1;
-        private ToolStripMenuItem gastosToolStripMenuItem1;
-        private ToolStripMenuItem funcionariosToolStripMenuItem;
-        private ToolStripMenuItem relatoriosToolStripMenuItem;
-        private ToolStripMenuItem mensalToolStripMenuItem;
-        private ToolStripMenuItem anualToolStripMenuItem;
+        private Panel pnlMenu;
+        private Panel pnlLogo;
+        private Panel pnlTopo;
+        private Panel pnlPrincipal;
+        private Button btnRelatorio;
+        private Button btnFuncionario;
+        private Button btnGastos;
+        private Button btnPizza;
+        private Button btnPedidos;
     }
 }

@@ -63,9 +63,9 @@ namespace Views.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bcgPizza {
+        internal static System.Drawing.Bitmap background {
             get {
-                object obj = ResourceManager.GetObject("bcgPizza", resourceCulture);
+                object obj = ResourceManager.GetObject("background", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,59 @@ namespace Views.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bcgPizza1 {
+        internal static System.Drawing.Bitmap backgrounde {
             get {
-                object obj = ResourceManager.GetObject("bcgPizza1", resourceCulture);
+                object obj = ResourceManager.GetObject("backgrounde", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bcgPizza {
+            get {
+                object obj = ResourceManager.GetObject("bcgPizza", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+         
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bgFuncionario {
+            get {
+                object obj = ResourceManager.GetObject("bgFuncionario", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap btnBuscar {
+            get {
+                object obj = ResourceManager.GetObject("btnBuscar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap funcionarios {
+            get {
+                object obj = ResourceManager.GetObject("funcionarios", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap IconPizza {
+            get {
+                object obj = ResourceManager.GetObject("IconPizza", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

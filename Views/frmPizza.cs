@@ -20,7 +20,7 @@ namespace Views
 
         private void button1_Click(object sender, EventArgs e)
         {
-            objetoCt.InserirPizza(txtSabor.Text, txtIngredientes.Text, txtPreco.Text, txtTipo.Text);
+            objetoCt.InserirPizza(txtSabor.Text, txtIngredientes.Text, txtPreco.Text);
         }
     }
 }

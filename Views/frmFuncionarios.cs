@@ -1,8 +1,8 @@
 ﻿namespace Views
 {
-    public partial class frmPrincipal : Form
+    public partial class frmFuncionarios : Form
     {
-        public frmPrincipal()
+        public frmFuncionarios()
         {
             InitializeComponent();
         }
